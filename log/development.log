@@ -1644,3 +1644,23 @@ Processing by CardsController#index as HTML
   Rendered cards/index.html.erb within layouts/application (2.5ms)
   Rendered layouts/_header.html.erb (0.7ms)
 Completed 200 OK in 74ms (Views: 71.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cards" for ::1 at 2017-05-16 19:22:23 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  [1m[35mCard Load (0.5ms)[0m  SELECT "cards".* FROM "cards"
+  Rendered cards/index.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_header.html.erb (8.6ms)
+Completed 200 OK in 660ms (Views: 646.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-05-16 19:22:24 -0500
+
+
+Started GET "/cards/new" for ::1 at 2017-05-16 19:22:28 -0500
+Processing by CardsController#new as HTML
+  Rendered cards/_form.html.erb (110.7ms)
+  Rendered cards/new.html.erb within layouts/application (113.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 183ms (Views: 172.8ms | ActiveRecord: 0.4ms)
