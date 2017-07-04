@@ -3619,3 +3619,68 @@ Processing by BooksController#index as HTML
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
   Rendered layouts/_header.html.erb (7.2ms)
 Completed 200 OK in 139ms (Views: 137.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-07-03 19:28:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sxMujWHugL4XFkz9Wej1pf4Q98t3YgskOJn2/kgtV17NLgKKuBkGZCM2Ra4HHH7FXKWtIbDRyD9OAzplpDQgoQ=="}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 84ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-07-03 19:28:46 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 802ms (Views: 796.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-07-03 19:28:54 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (126.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 290ms (Views: 284.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-07-03 19:29:03 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xa4WJW25RU4t5/1MtjCZ6PN2YlWMcGJxfOe+l5nxYiZm320izFwkHsT7oJXzRIYoiIsYeWpBZ5os9BlmepMhxA==", "user"=>{"email"=>"cottonwood@cottonwood.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "cottonwood@cottonwood.com"]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.5ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xa4WJW25RU4t5/1MtjCZ6PN2YlWMcGJxfOe+l5nxYiZm320izFwkHsT7oJXzRIYoiIsYeWpBZ5os9BlmepMhxA==", "user"=>{"email"=>"cottonwood@cottonwood.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 265ms (Views: 104.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-07-03 19:29:08 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fKWHkp5POMXzvFHzy4YQL6faQU03wXibjSrVN+vh8ndH1PyVP6pZlRqgDCqO8g/v3Cc7YdHwfXDdOXLGCIOxlQ==", "user"=>{"email"=>"cottonwood@cottonwood.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "cottonwood@cottonwood.com"]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fKWHkp5POMXzvFHzy4YQL6faQU03wXibjSrVN+vh8ndH1PyVP6pZlRqgDCqO8g/v3Cc7YdHwfXDdOXLGCIOxlQ==", "user"=>{"email"=>"cottonwood@cottonwood.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 339ms (Views: 190.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-07-03 19:29:14 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PrfK35SIet/OkDND73QNfgmqvTsMzemwy5xp8Eg7KcoFxrHYNW0bjyeMbpqqABK+clfHF+r87Fubj84Bq1lqKA==", "user"=>{"email"=>"cottonwood@cottonwood.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "cottonwood@cottonwood.com"]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PrfK35SIet/OkDND73QNfgmqvTsMzemwy5xp8Eg7KcoFxrHYNW0bjyeMbpqqABK+clfHF+r87Fubj84Bq1lqKA==", "user"=>{"email"=>"cottonwood@cottonwood.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 199ms (Views: 66.1ms | ActiveRecord: 0.0ms)
