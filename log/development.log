@@ -3718,3 +3718,535 @@ Migrating to AddAttachmentResourceToBooks (20170704160328)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+
+
+Started GET "/" for ::1 at 2017-07-05 21:12:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 619ms (Views: 576.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/devise.self-fde58b49158f098bf504f205a197dd0838f33e543f812d21a6b13a30726390ee.css?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2017-07-05 21:12:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2017-07-05 21:12:30 -0500
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2017-07-05 21:12:30 -0500
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2017-07-05 21:12:30 -0500
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2017-07-05 21:12:30 -0500
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-07-05 21:12:30 -0500
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2017-07-05 21:12:30 -0500
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2017-07-05 21:12:30 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-05 21:12:30 -0500
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-05 21:12:30 -0500
+
+
+Started GET "/assets/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-05 21:12:30 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-07-05 21:12:30 -0500
+
+
+Started GET "/books/new" for ::1 at 2017-07-05 21:12:41 -0500
+Processing by BooksController#new as HTML
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-07-05 21:12:41 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (67.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 153ms (Views: 139.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-07-05 21:12:50 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (50.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 207ms (Views: 204.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-07-05 21:13:08 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mC977X8X6/tYHSPUr9yOhgm6WPkkM3OFfHkD78rE6RajXgDq3vKKq7EBfg3qqJFGckci1cICdm4saqQeKaaq9A==", "user"=>{"email"=>"cottonwood@cottonwood.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'cottonwood@cottonwood.com' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "cottonwood@cottonwood.com"], ["encrypted_password", "$2a$11$Z4cs6awIINA2kVK6y4CJLep/q1RPHpdkshdodd.XHJmOui/pGLC9m"], ["created_at", "2017-07-06 02:13:08.490450"], ["updated_at", "2017-07-06 02:13:08.490450"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-07-06 02:13:08.497041"], ["current_sign_in_at", "2017-07-06 02:13:08.497041"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2017-07-06 02:13:08.497912"], ["id", 2]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/books/new
+Completed 302 Found in 229ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/books/new" for ::1 at 2017-07-05 21:13:08 -0500
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered books/_form.html.erb (1.3ms)
+  Rendered books/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.8ms)
+
+SyntaxError (/Users/kmjosephs/Ruby/Storex/app/views/books/_form.html.erb:9: syntax error, unexpected '<', expecting ')'
+    <%= f.input :image );@output_buffer.safe_append='
+     ^
+/Users/kmjosephs/Ruby/Storex/app/views/books/_form.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/kmjosephs/Ruby/Storex/app/views/books/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/kmjosephs/Ruby/Storex/app/views/books/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/books/_form.html.erb:9: syntax error, unexpected '<', expecting ')'
+  app/views/books/_form.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+  app/views/books/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/books/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb__714423516153249538_70300930809060'
+
+
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.7ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.8ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.8ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (174.8ms)
+
+
+Started GET "/books/new" for ::1 at 2017-07-05 21:14:22 -0500
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered books/_form.html.erb (2.1ms)
+  Rendered books/new.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/kmjosephs/Ruby/Storex/app/views/books/_form.html.erb:9: syntax error, unexpected '<', expecting ')'
+    <%= f.input :image );@output_buffer.safe_append='
+     ^
+/Users/kmjosephs/Ruby/Storex/app/views/books/_form.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/kmjosephs/Ruby/Storex/app/views/books/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/kmjosephs/Ruby/Storex/app/views/books/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/books/_form.html.erb:9: syntax error, unexpected '<', expecting ')'
+  app/views/books/_form.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+  app/views/books/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/books/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb__714423516153249538_70300930809060'
+
+
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.9ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.9ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.4ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (149.8ms)
+
+
+Started POST "/__web_console/repl_sessions/1523ac11f489a8a9f7c950bcd638542d/trace" for ::1 at 2017-07-05 21:15:09 -0500
+
+
+Started GET "/books/new" for ::1 at 2017-07-05 21:15:55 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered books/_form.html.erb (81.4ms)
+  Rendered books/new.html.erb within layouts/application (86.8ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 1.5ms)
+
+ActionView::Template::Error (uninitialized constant Paperclip::Storage::S3::Aws):
+     6:     <%= f.input :description, required: true, label: false, placeholder: "description", input_html: { class: "form-control"}, rows: 5 %>
+     7:     <%= f.input :price, required: true, label: false, placeholder: "price", input_html: { class: "form-control"} %>
+     8: 
+     9:     <%= f.input :image %>
+    10:     <%= f.input :resource %>
+    11: 
+    12:     <div class="checkbox text-center">
+  app/views/books/_form.html.erb:9:in `block in _app_views_books__form_html_erb___2281823716908859580_70289153817280'
+  app/views/books/_form.html.erb:1:in `_app_views_books__form_html_erb___2281823716908859580_70289153817280'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___2558440924262284190_70289114663960'
+
+
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.3ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (154.8ms)
+
+
+Started GET "/books/new" for ::1 at 2017-07-05 21:17:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered books/_form.html.erb (93.9ms)
+  Rendered books/new.html.erb within layouts/application (100.7ms)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 1.3ms)
+
+ActionView::Template::Error (uninitialized constant Paperclip::Storage::S3::Aws):
+     6:     <%= f.input :description, required: true, label: false, placeholder: "description", input_html: { class: "form-control"}, rows: 5 %>
+     7:     <%= f.input :price, required: true, label: false, placeholder: "price", input_html: { class: "form-control"} %>
+     8: 
+     9:     <%= f.input :image %>
+    10:     <%= f.input :resource %>
+    11: 
+    12:     <div class="checkbox text-center">
+  app/views/books/_form.html.erb:9:in `block in _app_views_books__form_html_erb___681807208452281173_70136820885180'
+  app/views/books/_form.html.erb:1:in `_app_views_books__form_html_erb___681807208452281173_70136820885180'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb__38548037632838004_70136820805360'
+
+
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.2ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.3ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/kmjosephs/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.2ms)
+
+
+Started GET "/books/new" for ::1 at 2017-07-05 21:49:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered books/_form.html.erb (92.6ms)
+  Rendered books/new.html.erb within layouts/application (99.3ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 749ms (Views: 680.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/books" for ::1 at 2017-07-05 21:51:31 -0500
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/u/0Bm+iN1yDGU0325jWkKPKATkzhXpGrDgNVRTsjDHFno8BzkdWDGoFEO6e7MlQ2Dd7FdW0f638K6qk947P0w==", "book"=>{"name"=>"The book of life", "author"=>"Hu Man", "description"=>"Blah", "price"=>"42", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fd21bb6c480 @tempfile=#<Tempfile:/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/RackMultipart20170705-50618-28s76r.jpg>, @original_filename="tainodesign.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"tainodesign.jpg\"\r\nContent-Type: image/jpeg\r\n">, "resource"=>#<ActionDispatch::Http::UploadedFile:0x007fd21bb6c430 @tempfile=#<Tempfile:/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/RackMultipart20170705-50618-15y8l1.pdf>, @original_filename="2016_11_21_11_46_19.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"book[resource]\"; filename=\"2016_11_21_11_46_19.pdf\"\r\nContent-Type: application/pdf\r\n">, "availability"=>"1"}, "commit"=>"Create Book"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/2827b5f29b075057d8ee68c42657ee2720170705-50618-mvnqwe.jpg'
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/625ff0f3b1dbc0a4d30a1d2bd543b3ba20170705-50618-k3vid2.pdf'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/2827b5f29b075057d8ee68c42657ee2720170705-50618-tfiuax.jpg'
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/625ff0f3b1dbc0a4d30a1d2bd543b3ba20170705-50618-2toc71.pdf'
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "books" ("name", "author", "description", "price", "availability", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "resource_file_name", "resource_content_type", "resource_file_size", "resource_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "The book of life"], ["author", "Hu Man"], ["description", "Blah"], ["price", 42], ["availability", "t"], ["image_file_name", "tainodesign.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 33480], ["image_updated_at", "2017-07-06 02:51:31.469766"], ["resource_file_name", "2016_11_21_11_46_19.pdf"], ["resource_content_type", "application/pdf"], ["resource_file_size", 160488], ["resource_updated_at", "2017-07-06 02:51:31.539582"], ["user_id", 2], ["created_at", "2017-07-06 02:51:31.585966"], ["updated_at", "2017-07-06 02:51:31.585966"]]
+[paperclip] saving /books/images/000/000/004/original/tainodesign.jpg
+[aws-sdk-gem-warning] S3 client configured for "us-east-1" but the bucket "storexdevelopment" is in"us-east-2"; Please configure the proper region to avoid multiple unecessary redirects and signing attempts
+
+[AWS S3 200 1.892917 0 retries] put_object(:acl=>:public_read,:bucket_name=>"storexdevelopment",:content_length=>33480,:content_type=>"image/jpeg",:data=>Paperclip::UploadedFileAdapter: tainodesign.jpg,:key=>"books/images/000/000/004/original/tainodesign.jpg")  
+
+[paperclip] saving /books/resources/000/000/004/original/2016_11_21_11_46_19.pdf
+[aws-sdk-gem-warning] S3 client configured for "us-east-1" but the bucket "storexdevelopment" is in"us-east-2"; Please configure the proper region to avoid multiple unecessary redirects and signing attempts
+
+[AWS S3 200 1.23387 0 retries] put_object(:acl=>:public_read,:bucket_name=>"storexdevelopment",:content_length=>160488,:content_type=>"application/pdf",:data=>Paperclip::UploadedFileAdapter: 2016_11_21_11_46_19.pdf,:key=>"books/resources/000/000/004/original/2016_11_21_11_46_19.pdf")  
+
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/books/4
+Completed 302 Found in 3483ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/books/4" for ::1 at 2017-07-05 21:51:34 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered books/show.html.erb within layouts/application (5.8ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (5.5ms)
+Completed 200 OK in 194ms (Views: 187.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/book-73626e2f2a97a58b632619a116119b5dba2d686a7e365d2cfc3733cddf38ec7c.jpg" for ::1 at 2017-07-05 21:51:35 -0500
+
+
+Started GET "/books/4/edit" for ::1 at 2017-07-05 21:51:47 -0500
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 4]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-07-05 21:51:47 -0500
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/books
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for ::1 at 2017-07-05 21:51:47 -0500
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (8.5ms)
+  Rendered books/index.html.erb within layouts/application (12.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 181ms (Views: 179.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/4" for ::1 at 2017-07-05 21:51:50 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered books/show.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (6.5ms)
+Completed 200 OK in 143ms (Views: 141.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/4/edit" for ::1 at 2017-07-05 21:51:52 -0500
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 4]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-07-05 21:51:52 -0500
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/books
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2017-07-05 21:51:52 -0500
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered books/_book.html.erb (6.5ms)
+  Rendered books/index.html.erb within layouts/application (10.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (4.2ms)
+Completed 200 OK in 151ms (Views: 149.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/4" for ::1 at 2017-07-05 21:51:59 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered books/show.html.erb within layouts/application (4.6ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (2.9ms)
+Completed 200 OK in 203ms (Views: 200.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2017-07-05 21:52:08 -0500
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE "books"."user_id" = ?  [["user_id", 2]]
+  Rendered pages/dashboard.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 139ms (Views: 135.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/4/edit" for ::1 at 2017-07-05 21:52:10 -0500
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 4]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-07-05 21:52:10 -0500
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/books
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for ::1 at 2017-07-05 21:52:10 -0500
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (5.3ms)
+  Rendered books/index.html.erb within layouts/application (7.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (3.3ms)
+Completed 200 OK in 182ms (Views: 180.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-07-05 21:52:12 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vGlebRbqaFqbmnxYiPA5SKd15YYNPZu0MRM8Enr3zRqHGCVqtw8JCnKGIYHNhCaI3IifqusMnl9hAJvjmZWO+A=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 26ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-07-05 21:52:12 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 111ms (Views: 104.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-07-05 21:52:16 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 158ms (Views: 153.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-07-05 21:52:26 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VzcinR2hGbFeareyvM/mHTT7j6vf+B+u0IshXhpuM73FFE2LqKFqVvOjdmGQLC2qgjObGRqDbcp3m0dddB0yFw==", "user"=>{"email"=>"cottonwood@cottonwood.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "cottonwood@cottonwood.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-07-06 02:52:26.367756"], ["sign_in_count", 2], ["updated_at", "2017-07-06 02:52:26.368736"], ["id", 2]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 200ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2017-07-05 21:52:26 -0500
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/books
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/books" for ::1 at 2017-07-05 21:52:26 -0500
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (7.2ms)
+  Rendered books/index.html.erb within layouts/application (12.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (5.1ms)
+Completed 200 OK in 185ms (Views: 182.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2017-07-05 21:52:30 -0500
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (8.1ms)
+  Rendered books/index.html.erb within layouts/application (11.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (2.9ms)
+Completed 200 OK in 127ms (Views: 124.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/new" for ::1 at 2017-07-05 21:52:36 -0500
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered books/_form.html.erb (35.6ms)
+  Rendered books/new.html.erb within layouts/application (38.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 128ms (Views: 124.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for ::1 at 2017-07-05 21:53:29 -0500
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hFOxkHQBKI2kCbACHVk9rEXCcVbFjoSIqLohSkEjRTy0+H0rJk0z03aJWLvtoX57FWh8W62SCN5eqFd8n4D+GA==", "book"=>{"name"=>"Skoden", "author"=>"Nation", "description"=>"blah", "price"=>"50", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fd2198f0d48 @tempfile=#<Tempfile:/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/RackMultipart20170705-50618-zhn12a.png>, @original_filename="Design1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"Design1.png\"\r\nContent-Type: image/png\r\n">, "resource"=>#<ActionDispatch::Http::UploadedFile:0x007fd2198f0cf8 @tempfile=#<Tempfile:/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/RackMultipart20170705-50618-1id4x1u.pdf>, @original_filename="2016_11_21_11_46_19.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"book[resource]\"; filename=\"2016_11_21_11_46_19.pdf\"\r\nContent-Type: application/pdf\r\n">, "availability"=>"1"}, "commit"=>"Create Book"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/913c04a441dbd8b68b502b395295854420170705-50618-1ltmvw.png'
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/625ff0f3b1dbc0a4d30a1d2bd543b3ba20170705-50618-18xo2k9.pdf'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/913c04a441dbd8b68b502b395295854420170705-50618-1f6t7y3.png'
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/625ff0f3b1dbc0a4d30a1d2bd543b3ba20170705-50618-1a4z21g.pdf'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "books" ("name", "author", "description", "price", "availability", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "resource_file_name", "resource_content_type", "resource_file_size", "resource_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Skoden"], ["author", "Nation"], ["description", "blah"], ["price", 50], ["availability", "t"], ["image_file_name", "Design1.png"], ["image_content_type", "image/png"], ["image_file_size", 224201], ["image_updated_at", "2017-07-06 02:53:29.457199"], ["resource_file_name", "2016_11_21_11_46_19.pdf"], ["resource_content_type", "application/pdf"], ["resource_file_size", 160488], ["resource_updated_at", "2017-07-06 02:53:29.489461"], ["user_id", 2], ["created_at", "2017-07-06 02:53:29.537259"], ["updated_at", "2017-07-06 02:53:29.537259"]]
+[paperclip] saving /books/images/000/000/005/original/Design1.png
+[aws-sdk-gem-warning] S3 client configured for "us-east-1" but the bucket "storexdevelopment" is in"us-east-2"; Please configure the proper region to avoid multiple unecessary redirects and signing attempts
+
+[AWS S3 200 2.345757 0 retries] put_object(:acl=>:public_read,:bucket_name=>"storexdevelopment",:content_length=>224201,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: Design1.png,:key=>"books/images/000/000/005/original/Design1.png")  
+
+[paperclip] saving /books/resources/000/000/005/original/2016_11_21_11_46_19.pdf
+[aws-sdk-gem-warning] S3 client configured for "us-east-1" but the bucket "storexdevelopment" is in"us-east-2"; Please configure the proper region to avoid multiple unecessary redirects and signing attempts
+
+[AWS S3 200 1.120205 0 retries] put_object(:acl=>:public_read,:bucket_name=>"storexdevelopment",:content_length=>160488,:content_type=>"application/pdf",:data=>Paperclip::UploadedFileAdapter: 2016_11_21_11_46_19.pdf,:key=>"books/resources/000/000/005/original/2016_11_21_11_46_19.pdf")  
+
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/books/5
+Completed 302 Found in 3568ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/books/5" for ::1 at 2017-07-05 21:53:33 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered books/show.html.erb within layouts/application (3.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 130ms (Views: 127.7ms | ActiveRecord: 0.4ms)
+  [1m[36mBook Load (0.5ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1[0m
