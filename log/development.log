@@ -4250,3 +4250,182 @@ Processing by BooksController#show as HTML
   Rendered layouts/_header.html.erb (3.0ms)
 Completed 200 OK in 130ms (Views: 127.7ms | ActiveRecord: 0.4ms)
   [1m[36mBook Load (0.5ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1[0m
+  [1m[36mSQL (9.9ms)[0m  [1mDELETE FROM "books"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "books"
+
+
+Started GET "/" for ::1 at 2017-07-08 11:01:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/books
+Completed 302 Found in 50ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/books" for ::1 at 2017-07-08 11:01:25 -0500
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = ?[0m  [["availability", "t"]]
+  Rendered collection (0.0ms)
+  Rendered books/index.html.erb within layouts/application (10.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (4.7ms)
+Completed 200 OK in 568ms (Views: 553.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/devise.self-fde58b49158f098bf504f205a197dd0838f33e543f812d21a6b13a30726390ee.css?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-07-08 11:01:26 -0500
+
+
+Started GET "/books/new" for ::1 at 2017-07-08 11:01:35 -0500
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered books/_form.html.erb (128.2ms)
+  Rendered books/new.html.erb within layouts/application (131.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 240ms (Views: 210.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books" for ::1 at 2017-07-08 11:03:02 -0500
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"akHWHUMJRns3SlwCyXiI586yemJ12vhGYGezbDm8/Rda6hqmEUVdJeXKtLs5gMswnhh3bx3GdBCWdcVa5x9GMw==", "book"=>{"name"=>"Test Book", "author"=>"Test author", "description"=>"Test Description", "price"=>"100", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fbf4580a168 @tempfile=#<Tempfile:/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/RackMultipart20170708-54965-1p77eg1.jpg>, @original_filename="pochliicon.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"pochliicon.jpg\"\r\nContent-Type: image/jpeg\r\n">, "resource"=>#<ActionDispatch::Http::UploadedFile:0x007fbf4580a118 @tempfile=#<Tempfile:/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/RackMultipart20170708-54965-te2my2.pdf>, @original_filename="2016_11_21_11_46_19.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"book[resource]\"; filename=\"2016_11_21_11_46_19.pdf\"\r\nContent-Type: application/pdf\r\n">, "availability"=>"1"}, "commit"=>"Create Book"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/ba68366cb3796bf1ae9661fc66c7788020170708-54965-1454k8k.jpg'
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/625ff0f3b1dbc0a4d30a1d2bd543b3ba20170708-54965-14zzcen.pdf'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/ba68366cb3796bf1ae9661fc66c7788020170708-54965-b84rf4.jpg'
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/625ff0f3b1dbc0a4d30a1d2bd543b3ba20170708-54965-jtyqxy.pdf'
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "books" ("name", "author", "description", "price", "availability", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "resource_file_name", "resource_content_type", "resource_file_size", "resource_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Test Book"], ["author", "Test author"], ["description", "Test Description"], ["price", 100], ["availability", "t"], ["image_file_name", "pochliicon.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 58515], ["image_updated_at", "2017-07-08 16:03:02.886592"], ["resource_file_name", "2016_11_21_11_46_19.pdf"], ["resource_content_type", "application/pdf"], ["resource_file_size", 160488], ["resource_updated_at", "2017-07-08 16:03:02.954918"], ["user_id", 2], ["created_at", "2017-07-08 16:03:03.014134"], ["updated_at", "2017-07-08 16:03:03.014134"]]
+[paperclip] saving /books/images/000/000/006/original/pochliicon.jpg
+[aws-sdk-gem-warning] S3 client configured for "us-east-1" but the bucket "storexdevelopment" is in"us-east-2"; Please configure the proper region to avoid multiple unecessary redirects and signing attempts
+
+[AWS S3 200 1.773884 0 retries] put_object(:acl=>:public_read,:bucket_name=>"storexdevelopment",:content_length=>58515,:content_type=>"image/jpeg",:data=>Paperclip::UploadedFileAdapter: pochliicon.jpg,:key=>"books/images/000/000/006/original/pochliicon.jpg")  
+
+[paperclip] saving /books/resources/000/000/006/original/2016_11_21_11_46_19.pdf
+[aws-sdk-gem-warning] S3 client configured for "us-east-1" but the bucket "storexdevelopment" is in"us-east-2"; Please configure the proper region to avoid multiple unecessary redirects and signing attempts
+
+[AWS S3 200 0.783863 0 retries] put_object(:acl=>:public_read,:bucket_name=>"storexdevelopment",:content_length=>160488,:content_type=>"application/pdf",:data=>Paperclip::UploadedFileAdapter: 2016_11_21_11_46_19.pdf,:key=>"books/resources/000/000/006/original/2016_11_21_11_46_19.pdf")  
+
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/6
+Completed 302 Found in 3032ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/books/6" for ::1 at 2017-07-08 11:03:05 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered books/show.html.erb within layouts/application (8.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (3.6ms)
+Completed 200 OK in 153ms (Views: 144.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book-73626e2f2a97a58b632619a116119b5dba2d686a7e365d2cfc3733cddf38ec7c.jpg" for ::1 at 2017-07-08 11:03:06 -0500
+
+
+Started GET "/books" for ::1 at 2017-07-08 11:05:59 -0500
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (1.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (13.9ms)
+  Rendered books/index.html.erb within layouts/application (34.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (4.5ms)
+Completed 200 OK in 364ms (Views: 345.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/books/6" for ::1 at 2017-07-08 11:10:12 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered books/show.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (31.9ms)
+Completed 200 OK in 429ms (Views: 426.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for ::1 at 2017-07-08 12:27:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (8.2ms)
+  Rendered books/index.html.erb within layouts/application (39.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (35.6ms)
+Completed 200 OK in 803ms (Views: 765.8ms | ActiveRecord: 1.5ms)
