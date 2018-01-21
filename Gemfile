@@ -53,5 +53,6 @@ group :development do
   gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
   gem 'dotenv-rails', groups: [:development]
   gem 'aws-sdk'
+  gem 'friendly_id'
 
 end

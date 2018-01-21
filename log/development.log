@@ -4429,3 +4429,423 @@ Processing by BooksController#index as HTML
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
   Rendered layouts/_header.html.erb (35.6ms)
 Completed 200 OK in 803ms (Views: 765.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/books/new" for ::1 at 2017-12-06 19:43:12 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#new as HTML
+Completed 401 Unauthorized in 77ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-12-06 19:43:12 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (88.7ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 925ms (Views: 885.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/devise.self-fde58b49158f098bf504f205a197dd0838f33e543f812d21a6b13a30726390ee.css?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2017-12-06 19:43:13 -0600
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+
+
+Started GET "/assets/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-12-06 19:43:14 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFriendlyIdSlugs (20171207022150)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "friendly_id_slugs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slug" varchar NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" varchar(50), "scope" varchar, "created_at" datetime) [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.5ms)[0m  [1mCREATE  INDEX "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" ("sluggable_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+
+  [1m[36m (1.8ms)[0m  [1mCREATE  INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" ("slug", "sluggable_type")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (7.4ms)[0m  CREATE UNIQUE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope" ON "friendly_id_slugs" ("slug", "sluggable_type", "scope")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" ("sluggable_type")
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171207022150"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Migrating to AddSlugsToBooks (20171207024932)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.6ms)[0m  ALTER TABLE "books" ADD "slug" varchar
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "index_books_on_slug" ON "books" ("slug")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20171207024932"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_books_on_slug' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_books_on_slug' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for ::1 at 2018-01-21 16:26:13 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mBook Load (0.4ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4
+  Rendered books/_book.html.erb (4.3ms)
+  Rendered pages/home.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 699ms (Views: 621.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/cards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/devise.self-fde58b49158f098bf504f205a197dd0838f33e543f812d21a6b13a30726390ee.css?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-01-21 16:26:14 -0600
+
+
+Started GET "/assets/cards.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-01-21 16:26:15 -0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2018-01-21 16:26:15 -0600
+
+
+Started GET "/users/sign_up" for ::1 at 2018-01-21 16:26:55 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (92.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 204ms (Views: 183.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2018-01-21 16:28:02 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sEOeKPzn9cww8C9jnFSI0pfALYBlEGiSPwiIvwURCPzhDiVfQV9NhD/7SJTFNTRfJpf3QsndKsXjbKUeqxYUEQ==", "user"=>{"email"=>"testuser@testemail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'testuser@testemail.com' LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "testuser@testemail.com"], ["encrypted_password", "$2a$11$TmNHtTyCfp2K7yT.fiAMeurvSinAqyHdmWNXqL9q.v2tZ62oqLzB6"], ["created_at", "2018-01-21 22:28:02.858617"], ["updated_at", "2018-01-21 22:28:02.858617"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2018-01-21 22:28:02.863967"], ["current_sign_in_at", "2018-01-21 22:28:02.863967"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2018-01-21 22:28:02.864900"], ["id", 3]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 217ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/" for ::1 at 2018-01-21 16:28:02 -0600
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+Redirected to http://localhost:3000/books
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4[0m
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for ::1 at 2018-01-21 16:28:02 -0600
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = ?  [["availability", "t"]]
+  Rendered books/_book.html.erb (5.0ms)
+  Rendered books/index.html.erb within layouts/application (9.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 117ms (Views: 114.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2018-01-21 16:28:11 -0600
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mBook Load (0.6ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 3]]
+  Rendered pages/dashboard.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 115ms (Views: 89.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/books/new" for ::1 at 2018-01-21 16:28:13 -0600
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered books/_form.html.erb (43.7ms)
+  Rendered books/new.html.erb within layouts/application (47.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 136ms (Views: 131.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for ::1 at 2018-01-21 16:30:18 -0600
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TSb+nb3HhsINu/Jl2DsF259r5IaUBe+4alB0HUzC+/sca0XqAH8+igKwlZKBWrlWLjw+RDjIre+2NFm84sXnFg==", "book"=>{"name"=>"Twin Cities History", "author"=>"Jane Doe", "description"=>"A history book about Minneapolis and St.  Paul", "price"=>"45", "image"=>#<ActionDispatch::Http::UploadedFile:0x007faa757cc758 @tempfile=#<Tempfile:/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/RackMultipart20180121-11163-1ypxxvi.jpg>, @original_filename="post_image1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"post_image1.jpg\"\r\nContent-Type: image/jpeg\r\n">, "availability"=>"1"}, "commit"=>"Create Book"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/8eeea61a15ae87b585afe7a48d24de6620180121-11163-ib6ky6.jpg'
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBook Exists (1.4ms)[0m  [1mSELECT  1 AS one FROM "books" WHERE ("books"."id" IS NOT NULL) AND "books"."slug" = ? LIMIT 1[0m  [["slug", "twin-cities-history"]]
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/8eeea61a15ae87b585afe7a48d24de6620180121-11163-4vgd70.jpg'
+  [1m[35m (0.4ms)[0m  rollback transaction
+  Rendered books/_form.html.erb (35.8ms)
+  Rendered books/new.html.erb within layouts/application (37.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 323ms (Views: 143.8ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/books" for ::1 at 2018-01-21 16:30:44 -0600
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bYNv96NeMgGSAuqaQ/JZ5U1YaV7dvQrBkaxO7eHW22A8ztSAHuaKSZ0JjW0ak+Vo/A+znHFwSJZNyGNMT9HHjQ==", "book"=>{"name"=>"Twin Cities History", "author"=>"Jane Doe", "description"=>"A history book about Minneapolis and St.  Paul", "price"=>"45", "image"=>#<ActionDispatch::Http::UploadedFile:0x007faa72754170 @tempfile=#<Tempfile:/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/RackMultipart20180121-11163-bh1lnz.jpg>, @original_filename="post_image2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"post_image2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "resource"=>#<ActionDispatch::Http::UploadedFile:0x007faa727540f8 @tempfile=#<Tempfile:/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/RackMultipart20180121-11163-6rr9ez.pdf>, @original_filename="2016_11_21_11_15_33.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"book[resource]\"; filename=\"2016_11_21_11_15_33.pdf\"\r\nContent-Type: application/pdf\r\n">, "availability"=>"1"}, "commit"=>"Create Book"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/990eef7b86745eba0fde93c75b65257620180121-11163-1cjup9t.jpg'
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/a3ae5ea1deea06aba0818789f652135720180121-11163-1nkuoz9.pdf'
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mBook Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "books" WHERE ("books"."id" IS NOT NULL) AND "books"."slug" = ? LIMIT 1[0m  [["slug", "twin-cities-history"]]
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/990eef7b86745eba0fde93c75b65257620180121-11163-fl7zsh.jpg'
+Command :: file -b --mime '/var/folders/h3/1v40_tfd54b_qxm7cgd1813m0000gn/T/a3ae5ea1deea06aba0818789f652135720180121-11163-1sqwrdt.pdf'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "books" ("name", "author", "description", "price", "availability", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "resource_file_name", "resource_content_type", "resource_file_size", "resource_updated_at", "user_id", "slug", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Twin Cities History"], ["author", "Jane Doe"], ["description", "A history book about Minneapolis and St.  Paul"], ["price", 45], ["availability", "t"], ["image_file_name", "post_image2.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 478923], ["image_updated_at", "2018-01-21 22:30:44.081854"], ["resource_file_name", "2016_11_21_11_15_33.pdf"], ["resource_content_type", "application/pdf"], ["resource_file_size", 185058], ["resource_updated_at", "2018-01-21 22:30:44.099872"], ["user_id", 3], ["slug", "twin-cities-history"], ["created_at", "2018-01-21 22:30:44.152120"], ["updated_at", "2018-01-21 22:30:44.152120"]]
+[paperclip] saving /books/images/000/000/007/original/post_image2.jpg
+[AWS S3 200 1.458899 0 retries] put_object(:acl=>:public_read,:bucket_name=>"storexdevelopment",:content_length=>478923,:content_type=>"image/jpeg",:data=>Paperclip::UploadedFileAdapter: post_image2.jpg,:key=>"books/images/000/000/007/original/post_image2.jpg")  
+
+[paperclip] saving /books/resources/000/000/007/original/2016_11_21_11_15_33.pdf
+[AWS S3 200 0.307131 0 retries] put_object(:acl=>:public_read,:bucket_name=>"storexdevelopment",:content_length=>185058,:content_type=>"application/pdf",:data=>Paperclip::UploadedFileAdapter: 2016_11_21_11_15_33.pdf,:key=>"books/resources/000/000/007/original/2016_11_21_11_15_33.pdf")  
+
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/twin-cities-history
+Completed 302 Found in 2020ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/books/twin-cities-history" for ::1 at 2018-01-21 16:30:46 -0600
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"twin-cities-history"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."slug" = ? LIMIT 1  [["slug", "twin-cities-history"]]
+  Rendered books/show.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 121ms (Views: 118.8ms | ActiveRecord: 0.3ms)
+  [1m[36mBook Load (0.5ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" ASC LIMIT 1000[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mBook Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "books" WHERE ("books"."id" != 6) AND "books"."slug" = ? LIMIT 1[0m  [["slug", "test-book"]]
+  [1m[35mSQL (0.4ms)[0m  UPDATE "books" SET "slug" = ?, "updated_at" = ? WHERE "books"."id" = ?  [["slug", "test-book"], ["updated_at", "2018-01-21 23:26:37.555369"], ["id", 6]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
